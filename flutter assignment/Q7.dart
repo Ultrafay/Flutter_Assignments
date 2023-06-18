@@ -1,5 +1,4 @@
-
-void checkNumber(int number) {
+void main() {
   if (number % 2 == 0) {
     // Even number
     if (number % 5 == 0) {
