@@ -61,6 +61,17 @@ void main() {
 
   print('Expenses:');
   print(expenses);
+
+  // Write a Dart code that takes in a list of integers and prints a new list with the elements sorted in ascending order. The original list should remain unchanged.
+  
+  List<int> originalList = [3,1,4,6,7];
+List<int> sortedList = List.from(originalList);
+
+sortedList.sort();
+
+print("originalList: $originalList");
+print ("sortedList: $sortedList");
+
 }
 
 
