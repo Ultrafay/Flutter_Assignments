@@ -1,9 +1,10 @@
+//1 print a list of names
 void main() {
    List Names = ["fay" , "raf" , "kay"];
   print (Names);
 
 
-// Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
+//2 Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
 
  List<String> days = [];
   days.add ("monday");
@@ -16,7 +17,7 @@ void main() {
   
   print(days);
   
-//   removing days one by one
+// 3  removing days one by one
   
  List<String> days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   print (days);
@@ -25,7 +26,7 @@ void main() {
   days.remove ("tuesday");
   print (days);
   
-//   checking which number is smaller and greater
+// 4  checking which number is smaller and greater
   
  List<int> numbers = [1, 2, 3,4, 7];
 
@@ -45,10 +46,18 @@ void main() {
 
   }
 
+//5 Implement a Dart code that uses the where() method to filter out odd numbers from a list of integers.
+//The program should take in the original list as a parameter and print a new list containing only the even numbers.
+
+List<int>numbers= [1,2,3,4,5,6,7,8,9];
+List<int>evenNumbers= numbers.where((numbers) => numbers%2==0).toList();
+print(numbers);
+print(evenNumbers);
 
 
 
-//if fri expenses exist if not then adding it.
+
+//6 if fri expenses exist if not then adding it.
 
 
  Map<String, double> expenses = {
@@ -62,7 +71,7 @@ void main() {
   print('Expenses:');
   print(expenses);
 
-  // Write a Dart code that takes in a list of integers and prints a new list with the elements sorted in ascending order. The original list should remain unchanged.
+  //7 Write a Dart code that takes in a list of integers and prints a new list with the elements sorted in ascending order. The original list should remain unchanged.
   
   List<int> originalList = [3,1,4,6,7];
 List<int> sortedList = List.from(originalList);
@@ -72,6 +81,38 @@ sortedList.sort();
 print("originalList: $originalList");
 print ("sortedList: $sortedList");
 
+//8 Given a map representing a product with keys "name", "price", and "quantity", 
+//write Dart code to check if the product is in stock. If the quantity is greater than 0, print "In stock", otherwise print "Out of stock"
+
+void main(){
+Map<String,dynamic> product = {
+  "name": "product 1",
+  "price": 10.0,
+  "quantity" : 5
+};
+if(product["quantity"] > 0)
+      {
+        print("in stock");
+      }
+  else
+  {
+    print("out of stock");
+  }
+}
+
+}
+//9 creating a map for a car,print "Match" if both conditions are true, otherwise print "No match".
+Map<String,dynamic> car = {
+  "brand": "Toyota",
+  "color": "Red",
+  "isSedan": true,
+};
+if(car["isSedan"]=true && car["color"]=="Red")
+{
+  print("Match");
+  }else{
+print("No match");
+  }
 }
 
 
