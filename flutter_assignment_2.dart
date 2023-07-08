@@ -136,4 +136,9 @@ var result = myMap.keys.where((key) => key.length==4);
 print(result);
 }
 
+// remove duplicate strings from list.
+List<String> fruits = ['apple', 'apple', 'batman', 'chinken wings'];
+List <String> results = fruits.toSet().toList();
+print('without duplicate : $results');
+print('originalList : $fruits');
 
