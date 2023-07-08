@@ -125,5 +125,15 @@ Map<String,dynamic> person ={
 {
   print("Eligible");
 }
+// print a key in map with length of 4.
+Map<String, dynamic> myMap = {
+  "raf" : 4240190414503,
+  'fay' : 42404190414502,
+  'ye' : 4240190414501,
+  'haha' : 4240,
+};
+var result = myMap.keys.where((key) => key.length==4);
+print(result);
+}
 
 
